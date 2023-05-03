@@ -1,56 +1,44 @@
+
+
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 
 <head>
   <meta charset="utf-8">
-  <title>Logout </title>
+  <title>ورود به سامانه   </title>
+  <link rel="icon" href="img/Log.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <style>
+    body{
+      background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+  </style>
 </head>
-<style>
-  body {
-    background-image: url(img/bg-city1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #Login{
-    background: #F7CA18;
-  margin: 5px;
-  padding:5px;
-  border-radius: 5px;
-  }
-  #Logout{
-  background: #6c757d82;
-  margin: 5px;
-  padding:5px;
-  border-radius: 5px;
-}
-</style>
-
 <body>
-  <div class="container" id="bg-main">
-    <div class="row align-items-start">
-        <div class="col" id="Logout">
-          <a href="index.html" class="d-flex justify-content-center">Logout</a>
-        </div>
-        <div class="col" id="Login">
-          <a href="Login.html" class="d-flex justify-content-center "> Login</a>
-        </div>
-      </div>
-    <div class="row">
-      <h3 class="d-flex justify-content-center align-item-center" id="titr">LOG IN</h3>
-      <div class="mb-4">
-        <input type="email" class="form-control" id="User_email" placeholder="name@example.com">
-      </div>
-      <div class="mb-4">
-        <input type="password" class="form-control" id="User_email" placeholder="your password">
-      </div>
-      <button type="button" class="btn btn-warning btn-signout">LOG IN</button>
-    
-      
-    </div>
+  <header>
+    <div class="container banner center">
+    <img src="img/baner.jpg" alt="banner" height="100px" style="margin-top: 10px;">
   </div>
+  </header>
+  <br>
+  <h6 class="center">لطفا نام کاربری و رمز عبور خود را وارد نمائید</h6>
+    <div class="container center">
+     
+        <form action="" class="user-login">
+            <label for="username">نام کاربری</label>
+            <input type="text">
+            <label for="userpassword">رمز عبور</label>
+            <input type="password">
+          <button class="center">ورود به سامانه  </button>
+          <button class="center"><a href="index.html">صفحه اصلی</a></button>
+        </form>
+      </div>
+    </div>
+
+  
+  <!---->
 </body>
 
 </html>
