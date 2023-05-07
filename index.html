@@ -26,8 +26,12 @@
     </nav>
       <div class="col-md-2 admin-sidebar">
         
-        <ul id="mylist" class="list-unstyled">
+        <ul class="list-unstyled tree-list">
           <li><a href="zarandieh.html">شهرستان زرندیه</a></li>
+            <ul class="list-unstyled sub-list">
+              <li><a href="#">دادگاه زرندیه</a></li>
+              <li><a href="#">دادسرای زرندیه</a></li>
+            </ul>
           <li><a href="#">شهرستان ساوه</a></li>
           <li><a href="#">شهرستان نوبران</a></li>
           <li><a href="#">شهرستان تفرش</a></li>
@@ -42,8 +46,8 @@
               <li><a href="#">مجتمع دادگاه های تجدید نظر</a></li>
               <li><a href="#">مجتمع دادگاه های عمومی و حقوقی </a></li>
               <li><a href="#">مجتمع دادسرای مرکز استان   </a></li>
-              <li><a href="#">مجتمع دادگاه های جرائم عمد </a></li>
-              <li><a href="#">مجتمع دادگاه های جرائم غیر عمد </a></li>
+              <li><a href="#">  مجتمع دادگاه انقلاب </a></li>
+              <li><a href="#">مجتمع تصادفات     </a></li>
               <li><a href="#">مجتمع شورای حل اختلاف   </a></li>
             </ul>
           </li>
@@ -55,7 +59,7 @@
       </div>
     <div class="col-md-10">
       <h6 class="center">جدول سخت افزاری</h6>
-      <table class="table table-primary">
+      <table class="table table-primary table-striped">
        <thead>
         <tr>
           <th>تعداد کاربر</th>
@@ -82,6 +86,19 @@
     </div>
   </div>
   <!---->
+  <script>
+    const treeListItems = document.querySelectorAll('.tree-list li');
+
+treeListItems.forEach(item => {
+  item.addEventListener('click', function() {
+    this.classList.toggle('open');
+    const subList = this.querySelector('.sub-list');
+    if (subList) {
+      subList.classList.toggle('open');
+    }
+  });
+});
+  </script>
 </body>
 
 </html>
