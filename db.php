@@ -1,9 +1,9 @@
 <?php
-// اتصال به دیتابیس
 $con = mysqli_connect('localhost', 'root', '', 'hardware');
-
-// بررسی اتصال
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+    if(!$con){
+        echo mysqli_connect_errno($con).PHP_EOL;
+        echo mysqli_connect_error($con).PHP_EOL;
+    }else{
+        echo 'successfully';
+    }
 ?>
