@@ -35,6 +35,13 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   </style>
 </head>
 <body>
+<div class="nav-bar">
+        <ul>
+            <li><a href="main.html">صفحه اصلی</a></li>
+            <li><a href="http://localhost:8080/hardware/form-insert.php">ورود اطلاعات  </a></li>
+            
+        </ul>
+  </div>
 
   <div class="container mt-5">
     <form action="get_data.php" method="POST">
