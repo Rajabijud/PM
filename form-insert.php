@@ -1,6 +1,4 @@
-<?php
-include 'db.php';
-?>
+
 <!DOCTYPE html>
 <html dir="rtl">
 
@@ -35,10 +33,14 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   </style>
 </head>
 <body>
+<?php
+include 'db.php';
+?>
 <div class="nav-bar">
         <ul>
             <li><a href="main.html">صفحه اصلی</a></li>
             <li><a href="http://localhost:8080/hardware/form-insert.php">ورود اطلاعات  </a></li>
+            <li><a href="#">گزارش گیری </a></li>
             
         </ul>
   </div>
@@ -49,31 +51,31 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
       <div class="col">
             <label for="city_name">نام شهر</label>
             <select name="city_name" id="city_name">
-              <option value="zarandihe_dadsara">دادسرای زرندیه</option>
-              <option value="zarandihe_dadgah">دادگاه زرندیه</option>
-              <option value="save_dadsara">دادسرای ساوه</option>
-              <option value="save_dadgah">دادگاه ساوه</option>
-              <option value="nobaran">دادگاه نوبران</option>
-              <option value="tafresh">دادگاه تفرش</option>
-              <option value="ashtian"> دادگاه آشتیان</option>
-              <option value="farahan"> دادگاه فراهان </option>
-              <option value="komijan"> دادگاه کمیجان</option>
-              <option value="milajerd"> دادگاه میلاجرد</option>
-              <option value="delijan_dadsara"> دادسرای دلیجان</option>
-              <option value="delijan_dadgah"> دادگاه دلیجان</option>
-              <option value="mahalat"> دادگاه محلات</option>
-              <option value="arak_tajdidnazar"> دادگاه تجدید نظر</option>
-              <option value="arak_mahakem"> مجتمع حقوقی و جزایی اراک</option>
-              <option value="arak_dadsara"> دادسرای اراک </option>
-              <option value="arak_enghelab"> دادگاه انقلاب اراک</option>
-              <option value="arak_setad"> مجتمع ستادی اراک</option>
-              <option value="arak_tasadofat">مجتمع تصادفات اراک</option>
-              <option value="arak_shora"> مجتمع شورای حل اختلف اراک</option>
-              <option value="khondab"> دادگاه خنداب</option>
-              <option value="khomain">دادگستری خمین</option>
-              <option value="shazand-dadsara">دادسرای شازند</option>
-              <option value="shazand-dadgah">دادگاه شازند</option>
-              <option value="zalian">دادگاه زالیان</option>
+              <option value="دادسرای زرندیه">دادسرای زرندیه</option>
+              <option value="دادگاه زرندیه">دادگاه زرندیه</option>
+              <option value="دادسرای ساوه">دادسرای ساوه</option>
+              <option value="دادگاه ساوه">دادگاه ساوه</option>
+              <option value="دادگستری نوبران">دادگاه نوبران</option>
+              <option value="دادگستری تفرش">دادگاه تفرش</option>
+              <option value="دادگستری آشتیان"> دادگاه آشتیان</option>
+              <option value="دادگستری فراهان"> دادگاه فراهان </option>
+              <option value="دادگستری فراهان"> دادگاه کمیجان</option>
+              <option value="دادگستری میلاجرد"> دادگاه میلاجرد</option>
+              <option value="دادسرای دلیجان"> دادسرای دلیجان</option>
+              <option value="دادگستری دلیجان"> دادگاه دلیجان</option>
+              <option value="دادگستری محلات"> دادگاه محلات</option>
+              <option value="مجتمع تجدید نظر"> دادگاه تجدید نظر</option>
+              <option value="مجتمع حقوقی و جزایی اراک"> مجتمع حقوقی و جزایی اراک</option>
+              <option value="دادسرای اراک"> دادسرای اراک </option>
+              <option value="دادگاه انقلاب اراک"> دادگاه انقلاب اراک</option>
+              <option value="مجتمع ستاد اراک"> مجتمع ستادی اراک</option>
+              <option value="مجتمع تصادفات اراک">مجتمع تصادفات اراک</option>
+              <option value="مجتمع شورای حل اختلاف اراک"> مجتمع شورای حل اختلف اراک</option>
+              <option value="دادگستری خنداب"> دادگاه خنداب</option>
+              <option value="دادگستری خمین">دادگستری خمین</option>
+              <option value="دادسرای شازند">دادسرای شازند</option>
+              <option value="دادگستری شازند">دادگاه شازند</option>
+              <option value="دادگستری زالیان">دادگاه زالیان</option>
             </select>
             <label for="branch">نام شعبه</label>
             <input type="text" id="branch_name" name="branch_name" placeholder="اول دادیاری" required>
@@ -97,22 +99,37 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
             <input type="number" id="monitor_id" name="monitor_id" required>
             <label for="monitor_model">مدل مانیتور</label>
             <select name="monitor_model" id="monitor_model">
+            <option value="LG15">LG15"</option>
+            <option value="LG17">LG17"</option>
               <option value="LG19">LG19"</option>
               <option value="LG20">LG20"</option>
               <option value="SAM19">SAM19"</option>
               <option value="SAM20">SAM20"</option>
-              <option value="Lenovo19">Lenovo</option>
+              <option value="Lenovo19">Lenovo19"</option>
+              <option value="Asus24">Asus24"</option>
+              <option value="MSI24">MSI24"</option>
               <option value="ETC">مدل های دیگر</option>
             </select>
             <label for="printer_id">کد اموال پرینتر</label>
-            <input type="number" id="printer_id" name="printer_id" required>
+            <input type="number" id="printer_id" name="printer_id" >
             <label for="printer_model">مدل پرینتر</label>
             <select name="printer_model" id="printer_model">
               <option value="HP2035">HP2035</option>
               <option value="HP2015">HP2015</option>
+              <option value="HP12a">HP12a</option>
+              <option value="HP1102">HP1102</option>
+              <option value="HP1200">HP1200</option>
+              <option value="HP1300">HP1300</option>
+              <option value="Samsung3310">Samsung3310</option>
+              <option value="Samsung4521">Samsung4521</option>
               <option value="HP402">HP402</option>
               <option value="HP1320">HP1320</option>
               <option value="GB1399">G&B1399</option>
+              <option value="GB1398">G&B1398</option>
+              <option value="GB1400">G&B1400</option>
+              <option value="ETC">مدل های دیگر </option>
+              <option value="ندارد">ندارد</option>
+
 
             </select>
             <label for="scaner_id">کد اموال اسکنر</label>
@@ -121,7 +138,11 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
             <select name="scaner_model" id="scaner_model">
               <option value="codack">codacki1120</option>
               <option value="Avitionfb1000">Avisionfb1000</option>
+              <option value="Avision-fb1200">Avision-fb1200</option>
               <option value="Avision-AD240">Avision-AD240</option>
+              <option value="Avision-AD125">Avision-AD125</option>
+              <option value="ETC">مدل های دیگر</option>
+              <option value="ندارد">ندارد</option>
             </select>
             <input name="formsubmit" type="submit" value="ارسال">
       </div>
