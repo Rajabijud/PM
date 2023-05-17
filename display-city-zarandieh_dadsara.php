@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="author" content="Morteza Rajabi">
 <title> گزارش دادسرای زرندیه</title>
   <link rel="icon" href="img/Log.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
@@ -24,9 +26,10 @@ include 'db.php';
   <header>
       <div class="nav-bar">
         <ul>
-            <li><a href="main.html">صفحه اصلی</a></li>
+            <li><a href="main.php">صفحه اصلی</a></li>
             <li><a href="http://localhost:8080/hardware/form-insert.php">ورود اطلاعات  </a></li>
             <li><a href="http://localhost:8080/hardware/report.php#">گزارش گیری </a></li>
+            <li><a href="http://localhost:8080/hardware/logout.php"> خروج </a></li>
             
         </ul>
   </div>

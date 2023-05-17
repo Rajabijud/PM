@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Morteza Rajabi">
-<title> گزارش کلی</title>
+<title> گزارش دادسرای ساوه </title>
   <link rel="icon" href="img/Log.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -20,9 +20,8 @@
 session_start();
 include 'db.php';
 
-    $get_data = "SELECT * FROM tb_hardware";
-    $get_data_query = $con->query($get_data);
-    $array_data = $get_data_query->fetch_assoc();
+      $get_data = "SELECT * FROM tb_hardware WHERE city_name = 'دادگستری زرندیه'";
+      $get_data_query = $con->query($get_data);
 ?>
   <header>
       <div class="nav-bar">

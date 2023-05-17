@@ -3,7 +3,8 @@
 <html dir="rtl">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="author" content="Morteza Rajabi">
   <title> صفحه اصلی</title>
   <link rel="icon" href="img/Log.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
@@ -21,9 +22,10 @@
   <header>
       <div class="nav-bar">
         <ul>
-            <li><a href="main.html">صفحه اصلی</a></li>
+            <li><a href="main.php">صفحه اصلی</a></li>
             <li><a href="http://localhost:8080/hardware/form-insert.php">ورود اطلاعات  </a></li>
             <li><a href="http://localhost:8080/hardware/report.php">گزارش گیری </a></li>
+            <li><a href="http://localhost:8080/hardware/logout.php"> خروج </a></li>
             
         </ul>
   </div>
@@ -38,6 +40,7 @@
                     <li><a href="display-device-system.php"><h6>گزارش  وضعیت کیس های استان </h6></a></li>
                     <li><a href="display-device-monitor.php"><h6>گزارش  وضعیت مانیتور های استان </h6></a></li>
                     <li><a href="display-device-printer.php"><h6>گزارش  وضعیت پرینتر های استان </h6></a></li>
+                    <li><a href="display-device-scaner.php"><h6>گزارش  وضعیت اسکنر های استان </h6></a></li>
 
                 </ul>
             </div>

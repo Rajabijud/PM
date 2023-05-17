@@ -20,7 +20,7 @@
 session_start();
 include 'db.php';
 
-    $get_data = "SELECT city_name, branch_name, printer_model FROM tb_hardware";
+    $get_data = "SELECT city_name, branch_name, scaner_model FROM tb_hardware";
     $get_data_query = $con->query($get_data);
 ?>
   <header>
@@ -36,7 +36,7 @@ include 'db.php';
   </header>
     <main>
     <div class="container-md">
-    <h6 class="center">گزارش وضعیت پرینتر های استان مرکزی</h6> 
+    <h6 class="center">گزارش وضعیت اسکنر های استان مرکزی</h6> 
     <table class="table table-primary table-striped" id="report_table">
         <thead>
             <tr>
@@ -50,13 +50,13 @@ include 'db.php';
             <?php
                 $rowNumber = 1; // تعریف متغیر ردیف
                 while ($array_data = $get_data_query->fetch_assoc()) {
-                    if ($array_data['printer_model'] !== 'ندارد') { // شرط عدم نمایش ردیف
+                    if ($array_data['scaner_model'] !== 'ندارد') { // شرط عدم نمایش ردیف
             ?>
             <tr>
                 <td><?php echo $rowNumber++; ?></td> <!-- نمایش ردیف -->
                 <td><?php echo $array_data['city_name']; ?></td>
                 <td><?php echo $array_data['branch_name']; ?></td>
-                <td><?php echo $array_data['printer_model']; ?></td>
+                <td><?php echo $array_data['scaner_model']; ?></td>
             </tr>
             <?php
                     }

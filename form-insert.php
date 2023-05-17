@@ -3,7 +3,8 @@
 <html dir="rtl">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="author" content="Morteza Rajabi">
   <link rel="icon" href="img/Log.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -38,9 +39,10 @@ include 'db.php';
 ?>
 <div class="nav-bar">
         <ul>
-            <li><a href="main.html">صفحه اصلی</a></li>
+            <li><a href="main.php">صفحه اصلی</a></li>
             <li><a href="http://localhost:8080/hardware/form-insert.php">ورود اطلاعات  </a></li>
-            <li><a href="#">گزارش گیری </a></li>
+            <li><a href="report.php">گزارش گیری </a></li>
+            <li><a href="http://localhost:8080/hardware/logout.php"> خروج </a></li>
             
         </ul>
   </div>
@@ -96,7 +98,7 @@ include 'db.php';
       </div>
       <div class="col">
             <label for="monitor_id">کد اموال مانیتور</label>
-            <input type="number" id="monitor_id" name="monitor_id" required>
+            <input type="number" id="monitor_id" name="monitor_id" >
             <label for="monitor_model">مدل مانیتور</label>
             <select name="monitor_model" id="monitor_model">
             <option value="LG15">LG15"</option>
@@ -108,7 +110,11 @@ include 'db.php';
               <option value="Lenovo19">Lenovo19"</option>
               <option value="Asus24">Asus24"</option>
               <option value="MSI24">MSI24"</option>
+              <option value="HP19">HP19"</option>
+              <option value="Benq22">Benq22"</option>
+
               <option value="ETC">مدل های دیگر</option>
+              <option value="null"> ندارد </option>
             </select>
             <label for="printer_id">کد اموال پرینتر</label>
             <input type="number" id="printer_id" name="printer_id" >
@@ -133,7 +139,7 @@ include 'db.php';
 
             </select>
             <label for="scaner_id">کد اموال اسکنر</label>
-            <input type="number" id="scaner_id" name="scaner_id" required>
+            <input type="number" id="scaner_id" name="scaner_id" >
             <label for="scaner_model">مدل اسکنر</label>
             <select name="scaner_model" id="scaner_model">
               <option value="codack">codacki1120</option>
