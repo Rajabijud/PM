@@ -4,6 +4,6 @@ $con = mysqli_connect('localhost', 'root', '', 'hardware');
         echo mysqli_connect_errno($con).PHP_EOL;
         echo mysqli_connect_error($con).PHP_EOL;
     }else{
-        echo 'successfully';
+        //echo 'successfully';
     }
 ?>

@@ -3,35 +3,35 @@
 <html dir="rtl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Morteza Rajabi">
-  <link rel="icon" href="img/Log.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <style>
-    body{
-      background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    }
-   .col{
-    display: flex;
-    flex-direction: column;
-   }
-   
-    .col input {
-    width: 50%;
-    padding: 5px;
-    border-radius: 5px;
-    }
-    .col select{
-    width: 50%;
-    padding: 5px;
-    border-radius: 5px;
-    } 
-    input[type="submit"]{
-      margin-top:10px;
-    }
-  </style>
+      <meta charset="UTF-8">
+      <meta name="author" content="Morteza Rajabi">
+      <link rel="icon" href="img/Log.png" type="image/png">
+      <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <style>
+        body{
+          background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+      .col{
+        display: flex;
+        flex-direction: column;
+      }
+      
+        .col input {
+        width: 50%;
+        padding: 5px;
+        border-radius: 5px;
+        }
+        .col select{
+        width: 50%;
+        padding: 5px;
+        border-radius: 5px;
+        } 
+        input[type="submit"]{
+          margin-top:10px;
+        }
+      </style>
 </head>
 <body>
 <?php
@@ -51,7 +51,7 @@ include 'db.php';
     <form action="get_data.php" method="POST">
   <div class="row">
       <div class="col">
-            <label for="city_name">نام شهر</label>
+            <label for="city_name">نام مجتمع قضایی</label>
             <select name="city_name" id="city_name">
               <option value="دادسرای زرندیه">دادسرای زرندیه</option>
               <option value="دادگاه زرندیه">دادگاه زرندیه</option>
@@ -110,9 +110,9 @@ include 'db.php';
               <option value="Lenovo19">Lenovo19"</option>
               <option value="Asus24">Asus24"</option>
               <option value="MSI24">MSI24"</option>
+              <option value="MSI22">MSI22"</option>
               <option value="HP19">HP19"</option>
               <option value="Benq22">Benq22"</option>
-
               <option value="ETC">مدل های دیگر</option>
               <option value="null"> ندارد </option>
             </select>
@@ -126,10 +126,10 @@ include 'db.php';
               <option value="HP1102">HP1102</option>
               <option value="HP1200">HP1200</option>
               <option value="HP1300">HP1300</option>
+              <option value="HP1320">HP1320</option>
+              <option value="HP402">HP402</option>
               <option value="Samsung3310">Samsung3310</option>
               <option value="Samsung4521">Samsung4521</option>
-              <option value="HP402">HP402</option>
-              <option value="HP1320">HP1320</option>
               <option value="GB1399">G&B1399</option>
               <option value="GB1398">G&B1398</option>
               <option value="GB1400">G&B1400</option>
@@ -142,13 +142,14 @@ include 'db.php';
             <input type="number" id="scaner_id" name="scaner_id" >
             <label for="scaner_model">مدل اسکنر</label>
             <select name="scaner_model" id="scaner_model">
+              <option value="ندارد">ندارد</option>
               <option value="codack">codacki1120</option>
               <option value="Avitionfb1000">Avisionfb1000</option>
               <option value="Avision-fb1200">Avision-fb1200</option>
               <option value="Avision-AD240">Avision-AD240</option>
               <option value="Avision-AD125">Avision-AD125</option>
               <option value="ETC">مدل های دیگر</option>
-              <option value="ندارد">ندارد</option>
+              
             </select>
             <input name="formsubmit" type="submit" value="ارسال">
       </div>

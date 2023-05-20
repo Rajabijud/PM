@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Morteza Rajabi">
-<title> گزارش دادگستری فراهان  </title>
+<title> گزارش  مجتمع حقوقی </title>
   <link rel="icon" href="img/Log.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -22,7 +22,7 @@
 session_start();
 include 'db.php';
 
-      $get_data = "SELECT * FROM tb_hardware WHERE city_name = 'دادگستری فراهان'";
+      $get_data = "SELECT * FROM tb_hardware WHERE city_name = 'مجتمع حقوقی و جزایی اراک'";
       $get_data_query = $con->query($get_data);
 ?>
   <header>
@@ -59,9 +59,12 @@ include 'db.php';
             </tr>
            </thead>
            <tbody>
-    <?php while ($array_data = $get_data_query->fetch_assoc()) { ?>
+            
+    <?php
+    $rowNumber = 1; // تعریف متغیر ردیف 
+    while ($array_data = $get_data_query->fetch_assoc()) { ?>
         <tr>
-            <td><?php echo $array_data['id'] ?></td>
+            <td><?php echo $rowNumber++; ?></td>
             <td><?php echo $array_data['city_name'] ?></td>
             <td><?php echo $array_data['branch_name'] ?></td>
             <td><?php echo $array_data['user_name'] ?></td>

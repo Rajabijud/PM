@@ -3,18 +3,18 @@
 <html dir="rtl">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Morteza Rajabi">
-  <title> صفحه اصلی</title>
-  <link rel="icon" href="img/Log.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <style>
-    body{
-      background: rgb(238,174,202);
-      background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    }
-  </style>
+      <meta charset="utf-8">
+      <meta name="author" content="Morteza Rajabi">
+      <title> صفحه اصلی</title>
+      <link rel="icon" href="img/Log.png" type="image/png">
+      <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <style>
+        body{
+          background: rgb(238,174,202);
+          background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+      </style>
 </head>
 <body>
 <?php

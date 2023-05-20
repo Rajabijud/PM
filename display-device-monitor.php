@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="author" content="Morteza Rajabi">
-<title>گزارش مانیتور ها</title>
-  <link rel="icon" href="img/monitor.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Morteza Rajabi">
+    <title>گزارش مانیتور ها</title>
+      <link rel="icon" href="img/monitor.png" type="image/png">
+      <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <style>
+        body{
+          background: rgb(238,174,202);
+          background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+      </style>
 </head>
-<style>
-    body{
-      background: rgb(238,174,202);
-      background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    }
-  </style>
   <body>
   <?php
 session_start();
@@ -37,9 +37,8 @@ include 'db.php';
     <main>
     <div class="container"> 
     <h6 class="center">گزارش وضعیت مانیتور های استان مرکزی</h6>
-    <a href="output.xlsx" download>
-      <button class="btn btn-success">دانلود فایل اکسل</button>
-    </a> 
+    <!--<a href="outputexel.php"><button class="btn btn-success">دانلود فایل اکسل</button> </a> -->
+
     <table class="table table-primary table-striped" id="report_table">
         <thead>
             <tr>

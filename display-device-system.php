@@ -8,14 +8,15 @@
   <link rel="icon" href="img/system.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-</head>
-<style>
+  <style>
     body{
       background: rgb(238,174,202);
       background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
   </style>
   <body>
+</head>
+
   <?php
 session_start();
 include 'db.php';
