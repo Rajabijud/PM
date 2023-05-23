@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'myfont';
+  src:  url('font/Vazir-Bold-FD.eot') format('woff2'),
+        url('font/Vazir-Bold-FD.woff') format('woff');
+}
+body{
+  font-family: "myfont";
+	text-align:right;
+	text-decoration:none;
+	direction:rtl;
+  max-height: 86vh;	
+  margin: 0;
+  direction: rtl;
+
+}
+.admin-sidebar{
+  background-color: rgb(54, 255, 47);
+}
+*{box-sizing: border-box;}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height:100vh;
+}
+
+.tittle_header{
+  background: #fff;
+    padding: 20px 8px;
+    border-radius: 25px;
+}
+form label{
+  font-family: "myfont";
+}
+form select{
+  padding: 5px;
+  border-radius: 2px;
+}
+input[type="submit"]{
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "myfont";
+  margin-bottom: 5px;
+}
+/**************************************************style header*/
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100px;
+}
+/***********************************************************style list */
+.nav-bar{
+  background-color:#2d1c1cab;
+}
+.nav-bar li{
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  
+}
+.nav-bar ul{
+  list-style-type: none;
+  
+}
+.nav-bar a{
+  text-decoration: none;
+  color: black;
+  font-family: "myfont";
+  background: #d8caca;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+}
+.nav-bar a:hover{
+  background: #fffafa;
+}
+.btn-success{
+  margin-bottom: 5px;
+}
+/*************************************style treelist*****************************/
+.city_list {
+  list-style-type: none;
+}
+.city_list a {
+  text-decoration: none;
+  color: black;
+  font-family: "myfont";
+}
+.city_list li {
+    background: #10a8d366;
+    border-radius: 5px;
+    font-family: "myfont";
+    padding: 5px;
+    margin: 2px;
+
+}
+.city_list li:hover{
+  background: #fff;
+  cursor: pointer;
+}
+/*******************************************endd treelist***************************/
+#mylist li {
+  list-style-type: none;
+  padding: right 0;
+  
+}
+.list-unstyled {
+  padding-right:0!important;
+}
+#mylist a{ 
+text-decoration: none;
+color: black;
+}
+
+/*********************************************** style main content */
+table th{
+  vertical-align: middle;
+  text-align: center;
+}
+table td{
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+/***************************************************login style*/ 
+.logo{
+  display: flex;
+}
+.logo img{
+  width: 100px;
+  
+
+}
+div#login-titr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  background-color: #ffffffbd;
+  padding: 5%;
+  max-width: 700px;
+  font-family: "myfont";
+}
+.user-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffffbd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 30%;
+}
+#form-titr{
+  margin-bottom: 25px;
+  font-family: "myfont";
+}
+.user-login label {
+  margin-bottom: 5px!important;
+  font-family: "myfont";
+}
+
+.user-login input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #070000;
+  background-color: #d2d4da75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input#usersubmit {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-family: "myfont";
+}
+
+.user-login button:hover {
+  background-color: #3e8e41;
+}
+
+/**********************style user input data***********/
+form.user-inputdata{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
+  position: relative;
+}
+.user-inputdata input {
+  border-radius: 5px;
+  padding: 5px;
+  text-align: justify;
+}
+.user-inputdata label{
+  font-family: "myfont";
+  font-size: 20px;
+}
+.user-inputdata select {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#title-user-inputdata h6{
+  margin-top: 5%;
+}
+#bt-user-inputdata{
+  margin-top: 5%;
+  position: relative;
+  top: 100px;
+}
+#bt-user-inputdata button{
+    margin: 10px;
+    font-family: "myfont";
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+}
+#bt-user-inputdata button:hover{
+  background-color: green;
+}
+/********************************************** style report page****/
+#report-type a{
+  color: #000;
+  text-decoration: none;
+}
+#report-type h6{
+  background: #10a8d366;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#report-type h6:hover{
+  background: #fff;
+}
+#report-image{
+  width: 100%;
+}
+/********************************************* style city-printermodel**/
+div#city-printermodel {
+  /* background: #ccc; */
+  padding: 5px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div#city-printermodel label{
+  font-family: "myfont";
+}
+div#city-printermodel select{
+  padding: 5px;
+  border-radius: 2px;
+}

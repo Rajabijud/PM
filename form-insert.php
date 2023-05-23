@@ -5,6 +5,7 @@
 <head>
       <meta charset="UTF-8">
       <meta name="author" content="Morteza Rajabi">
+      <title>ورود اطلاعات</title>
       <link rel="icon" href="img/Log.png" type="image/png">
       <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
