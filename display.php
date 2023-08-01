@@ -1,4 +1,12 @@
+<?php
+session_start();
 
+if (!isset($_SESSION["username"])) {
+  // کاربر لاگین نکرده است، بنابراین هدایت به صفحه لاگین کنید
+  header("Location: login.php");
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,6 +38,7 @@ include 'db.php';
         <ul>
             <li><a href="main.php">صفحه اصلی</a></li>
             <li><a href="http://localhost:8080/hardware/form-insert.php">ورود اطلاعات  </a></li>
+            <li><a href="search_update.php">جستجو و ویرایش</a></li>
             <li><a href="http://localhost:8080/hardware/report.php#">گزارش گیری </a></li>
             <li><a href="http://localhost:8080/hardware/logout.php"> خروج </a></li>
             
